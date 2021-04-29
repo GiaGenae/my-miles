@@ -1,4 +1,4 @@
-class CreateMiles < ActiveRecord::Migration[5.2]
+class CreateRuns < ActiveRecord::Migration[5.2]
   def change
     create_table :miles do |t|
       t.date :date
