@@ -4,7 +4,7 @@ class CreateMiles < ActiveRecord::Migration[5.2]
       t.date :date
       t.decimal :distance
       t.time :duration
-      t.references :runner, foreign_key: {to_table: :users, on_delete: :cascade}
+      # t.references :runner, foreign_key: {to_table: :users, on_delete: :cascade}
 
       t.timestamps null: false
     end
