@@ -23,5 +23,10 @@ class RunController < ApplicationController
 
     #update
 
+    get '/runs' do
+        @runs = Run.all
+        erb :'/runs/index'
+    end
+
     #delete
 end

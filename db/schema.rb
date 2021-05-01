@@ -10,17 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_30_002622) do
-
-  # create_table "miles", force: :cascade do |t|
-  #   t.date "date"
-  #   t.decimal "distance"
-  #   t.time "duration"
-  #   t.integer "runner_id"
-  #   t.datetime "created_at", null: false
-  #   t.datetime "updated_at", null: false
-  #   t.index ["runner_id"], name: "index_miles_on_runner_id"
-  # end
+ActiveRecord::Schema.define(version: 2021_04_30_010357) do
 
   create_table "runs", force: :cascade do |t|
     t.date "date"
@@ -28,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_04_30_002622) do
     t.time "duration"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|

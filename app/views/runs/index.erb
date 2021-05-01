@@ -1,0 +1,5 @@
+<% @runs.each do |run| %><br><br>
+    Run Number: <%= run.id %><br>
+    Date: <%= run.date %><br>
+    Username: <%= run.user_id.username %>
+<% end %>
